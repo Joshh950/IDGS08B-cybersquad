@@ -1,0 +1,264 @@
+/*Inicio*/
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e4e4f3;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+ 
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #666;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hero {
+  background-image: url("moon.svg");
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.carousel-container {
+  width: 40%;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 300%;
+}
+
+.carousel-slide img {
+  width: 33.33%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imag{
+  display: flex;
+  flex-direction: row;
+}
+
+
+/*cursos*/
+.course-column {
+display: flex;
+flex-direction: column;
+margin-left: 150px;
+}
+
+.course-item {
+margin-bottom: 20px;
+}
+
+.course-item img {
+width: 80px; /* Ajusta el tamaño de la imagen según tus necesidades */
+}
+
+.course-item h3 {
+font-size: 18px;
+margin: 10px 0;
+}
+
+.course-item p {
+font-size: 14px;
+}
+
+
+/*registro*/
+.form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+max-width: 350px;
+padding: 20px;
+border-radius: 20px;
+position: relative;
+margin-left: 500px;
+}
+
+.title {
+font-size: 28px;
+color: rgb(74, 74, 74);
+font-weight: 600;
+letter-spacing: -1px;
+position: relative;
+display: flex;
+align-items: center;
+padding-left: 30px;
+}
+
+.title::before,.title::after {
+position: absolute;
+content: "";
+height: 16px;
+width: 16px;
+border-radius: 50%;
+left: 0px;
+background-color: rgb(132, 102, 163);
+}
+
+.title::before {
+width: 18px;
+height: 18px;
+background-color: rgb(130, 120, 141);
+}
+
+.title::after {
+width: 18px;
+height: 18px;
+animation: pulse 1s linear infinite;
+}
+
+.message, .signin {
+color: rgba(88, 87, 87, 0.822);
+font-size: 14px;
+}
+
+.signin {
+text-align: center;
+}
+
+.signin a {
+color: rgb(75, 75, 75);
+}
+
+.signin a:hover {
+text-decoration: underline rgb(75, 75, 75);
+}
+
+.flex {
+display: flex;
+width: 100%;
+gap: 6px;
+}
+
+.form label {
+position: relative;
+}
+
+.form label .input {
+width: 100%;
+padding: 10px 10px 20px 10px;
+outline: 0;
+border: 1px solid rgba(105, 105, 105, 0.397);
+border-radius: 10px;
+}
+
+.form label .input + span {
+position: absolute;
+left: 10px;
+top: 15px;
+color: grey;
+font-size: 0.9em;
+cursor: text;
+transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+top: 15px;
+font-size: 0.9em;
+}
+
+.form label .input:focus + span,.form label .input:valid + span {
+top: 30px;
+font-size: 0.7em;
+font-weight: 600;
+}
+
+.form label .input:valid + span {
+color: rgb(4, 128, 0);
+}
+
+.submit {
+border: none;
+outline: none;
+background-color: rgb(75, 75, 75);
+padding: 10px;
+border-radius: 10px;
+color: #fff;
+font-size: 16px;
+transform: .3s ease;
+}
+
+.submit:hover {
+background-color: rgb(101, 88, 122);
+}
+
+@keyframes pulse {
+from {
+  transform: scale(0.9);
+  opacity: 1;
+}
+
+to {
+  transform: scale(1.8);
+  opacity: 0;
+}
+}
+
+
